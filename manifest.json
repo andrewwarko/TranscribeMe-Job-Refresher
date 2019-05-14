@@ -1,0 +1,10 @@
+{
+  "name": "TranscribeMe Job Refresher",
+  "manifest_version": 2,
+  "version": "0.5",
+  "content_scripts": [{
+      "js": ["jobrefresher.js"],
+      "run_at": "document_end",
+      "matches": ["https://*.transcribeme.com/*"]
+  }]
+}
